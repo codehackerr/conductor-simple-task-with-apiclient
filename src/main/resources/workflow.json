@@ -1,0 +1,18 @@
+{
+  "name": "greetings",
+  "description": "Sample greetings workflow",
+  "ownerEmail" : "abdul.salam@orkes.io",
+  "version": 1,
+  "tasks": [
+    {
+      "name": "greet",
+      "taskReferenceName": "greet_ref",
+      "type": "SIMPLE",
+      "inputParameters": {
+        "name": "${workflow.input.name}"
+      }
+    }
+  ],
+  "timeoutPolicy": "TIME_OUT_WF",
+  "timeoutSeconds": 60
+}
